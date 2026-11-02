@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Skills - SkillSwap</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-body">
+
+<header class="dashboard-navbar">
+    <h2 class="logo">Skill<span>Swap</span></h2>
+    <div>
+        <span id="studentName">Student</span>
+        <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+</header>
+
+<main class="add-skill-main">
+
+    <h1>Add Your Skills</h1>
+    <p>Share your knowledge and help other students learn.</p>
+
+    <form id="skillForm" class="skill-form">
+
+        <label>Skill Name</label>
+        <input type="text" id="skillName"
+               placeholder="e.g. Web Development" required>
+
+        <label>Skill Category</label>
+        <select id="skillCategory" required>
+            <option value="">Select Category</option>
+            <option>Programming</option>
+            <option>Design</option>
+            <option>Marketing</option>
+            <option>Communication</option>
+            <option>Other</option>
+        </select>
+
+        <label>Skill Description</label>
+        <textarea id="skillDescription"
+                  placeholder="Describe your skill..."
+                  rows="4" required></textarea>
+
+        <label>Skill Level</label>
+        <select id="skillLevel" required>
+            <option value="">Select Level</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+        </select>
+
+        <button type="submit" class="register-btn">
+            Add Skill
+        </button>
+
+    </form>
+
+    <section class="my-skills-section">
+        <h2>My Added Skills</h2>
+        <div id="mySkillsList" class="my-skills-grid"></div>
+    </section>
+
+</main>
+
+<script src="js/add-skill.js"></script>
+
+</body>
+</html>
