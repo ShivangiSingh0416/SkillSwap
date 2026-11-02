@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SkillSwap</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-body">
+
+    <header class="dashboard-navbar">
+        <h2 class="logo">Skill<span>Swap</span></h2>
+        <div>
+            <span id="studentName">Student</span>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <div class="dashboard-layout">
+
+        <aside class="sidebar">
+            <h3>Menu</h3>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="explore.html">Explore Skills</a>
+            <a href="add-skill.html">Add Skills</a>
+            <a href="requests.html">My Requests</a>
+            <a href="profile.html">My Profile</a>
+            <a href="index.html">Home</a>
+        </aside>
+
+        <main class="dashboard-main">
+
+            <div class="welcome-section">
+                <h1>Welcome, <span id="welcomeName">Student</span>!</h1>
+                <p>Manage your skills and discover new learning opportunities.</p>
+            </div>
+
+            <div class="stats-container">
+
+                <div class="stat-card">
+                    <h3>Skills Offered</h3>
+                    <h2 id="offeredCount">0</h2>
+                    <p>Your teaching skills</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Skills to Learn</h3>
+                    <h2 id="learningCount">0</h2>
+                    <p>Your learning interests</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Exchange Requests</h3>
+                    <h2 id="requestCount">0</h2>
+                    <p>Your sent requests</p>
+                </div>
+
+            </div>
+
+            <section class="dashboard-section">
+                <h2>Quick Actions</h2>
+
+                <div class="quick-actions">
+                    <a href="explore.html" class="action-card">
+                        <h3>Explore Skills</h3>
+                        <p>Find students and learn new skills.</p>
+                    </a>
+
+                    <a href="add-skill.html" class="action-card">
+                        <h3>Add Your Skills</h3>
+                        <p>Share your knowledge with others.</p>
+                    </a>
+
+                    <a href="requests.html" class="action-card">
+                        <h3>My Requests</h3>
+                        <p>Check your exchange requests.</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <h2>Your Learning Profile</h2>
+
+                <div class="profile-summary">
+                    <p><strong>College:</strong> <span id="collegeName">-</span></p>
+                    <p><strong>Course:</strong> <span id="courseName">-</span></p>
+                    <p><strong>Teaching:</strong> <span id="teachingSkills">-</span></p>
+                    <p><strong>Want to Learn:</strong> <span id="learningSkills">-</span></p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

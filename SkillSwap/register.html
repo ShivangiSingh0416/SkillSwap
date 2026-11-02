@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - SkillSwap</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="register-container">
+        <form class="register-form" id="registerForm">
+
+            <h1>Join SkillSwap</h1>
+            <p>Create your student account</p>
+
+            <label>Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+
+            <label>Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label>Password</label>
+            <input type="password" id="password"
+                   placeholder="Create password" minlength="6" required>
+
+            <label>Confirm Password</label>
+            <input type="password" id="confirmPassword"
+                   placeholder="Confirm password" required>
+
+            <label>College Name</label>
+            <input type="text" id="college" placeholder="Enter college name" required>
+
+            <label>Course</label>
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option>BCA</option>
+                <option>B.Tech</option>
+                <option>BBA</option>
+                <option>MCA</option>
+                <option>Other</option>
+            </select>
+
+            <label>Skills You Can Teach</label>
+            <input type="text" id="teach"
+                   placeholder="e.g. HTML, Java, Photoshop" required>
+
+            <label>Skills You Want to Learn</label>
+            <input type="text" id="learn"
+                   placeholder="e.g. Python, Web Design" required>
+
+            <button type="submit" class="register-btn">
+                Create Account
+            </button>
+
+            <p class="login-link">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+        </form>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
